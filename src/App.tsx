@@ -3,6 +3,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import Sidebar from "./components/Layout";
 import Layout from "./components/Layout";
+import Stats from "./components/Stats";
+import Transactions from "./components/Transations";
 
 function App() {
   return (
@@ -21,16 +23,10 @@ function App() {
               </div>
             </div>
             {/* Stats */}
-            <div className="mt-[24px] flex gap-[20px]">
-              <div className="flex-1 h-[118px] bg-[#FFF] p-[20px]">
-                <p className="text-[16px] font-normal leading-6 text-[#4D4D4D]">Online orders</p>
-                <p className="text-[32px] font-medium leading-[38px] text-[#1A181E] mt-[16px]">231</p>
-              </div>
-              <div className="flex-1 h-[118px] bg-[#FFF] p-[20px]">
-                <p className="text-[16px] font-normal leading-6 text-[#4D4D4D]">Online orders</p>
-                <p className="text-[32px] font-medium leading-[38px] text-[#1A181E] mt-[16px]">₹23,92,312.19</p>
-              </div>
-            </div>
+            <Stats />
+
+            {/* Transactions */}
+            <Transactions />
           </div>
         </Layout>
       </div>
