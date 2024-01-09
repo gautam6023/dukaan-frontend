@@ -37,7 +37,7 @@ const Table = () => {
       </div>
       {data.map((el) => {
         return (
-          <div className="rounded-[4px] bg-[#FFF] text-[#4D4D4D] w-[100%] px-[12px] py-[14px] flex justify-between border-b-[1px] gap-[40px]">
+          <div className="rounded-[4px] bg-[#FFF] text-[#4D4D4D] w-[100%] px-[12px] py-[14px] flex justify-between border-b-[1px] gap-[40px] hover:bg-slate-50 hover:rounded-[0px]">
             <div className="flex-1">
               {" "}
               <p className="text-[14px] font-medium leading-5 text-[#146EB4] cursor-pointer">#{el.id}</p>

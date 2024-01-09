@@ -103,7 +103,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </div>
           </div>
         </div>
-        <div className="flex-grow overflow-auto">{children}</div>
+        <div className="flex-grow overflow-auto  max-w-[1480px] m-auto w-[calc(100vw-248px)]">{children}</div>
       </div>
     </div>
   );

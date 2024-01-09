@@ -3,6 +3,7 @@ import { FiSearch } from "react-icons/fi";
 import Table from "./Table";
 import { TbArrowsSort } from "react-icons/tb";
 import { GoDownload } from "react-icons/go";
+import Pagination from "./Pagination";
 
 const Transactions = () => {
   return (
@@ -51,6 +52,9 @@ const Transactions = () => {
         </div>
 
         <Table />
+        <div className="mt-6 mb-3 flex justify-center">
+          <Pagination />
+        </div>
       </div>
     </>
   );
