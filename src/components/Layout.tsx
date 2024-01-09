@@ -84,7 +84,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </div>
       </div>
       {/* Topbar */}
-      <div className="flex flex-col flex-grow">
+      <div className="flex flex-col flex-grow bg-[#FAFAFA]">
         <div className="h-[64px] bg-white border-b-[1px] border-[#D9D9D9] px-[32px] py-[12px] flex gap-[16px] items-center">
           <div className="flex-1 gap-[16px] flex">
             <h1 className="text-[15px] font-normal leading-4">Payments</h1>

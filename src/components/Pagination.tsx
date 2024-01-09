@@ -6,7 +6,17 @@ const Pagination = () => {
 
   return (
     <div className="flex gap-[24px] items-center">
-      <button className="text-[#4D4D4D] border-[1px] flex items-center px-[12px] py-[6px] gap-[6px] border-[#D9D9D9] rounded hover:bg-slate-50">
+      <button
+        disabled={select === 1}
+        onClick={() => {
+          if (select === 10) {
+            setSelect(1);
+            return;
+          }
+          setSelect(select - 1);
+        }}
+        className="text-[#4D4D4D] border-[1px] flex items-center px-[12px] py-[6px] gap-[6px] border-[#D9D9D9] rounded hover:bg-slate-50"
+      >
         <span className="material-symbols-outlined text-[16px]">arrow_back_ios</span>
         <p>Previous</p>
       </button>
@@ -33,7 +43,17 @@ const Pagination = () => {
           );
         })}
       </div>
-      <button className="text-[#4D4D4D] border-[1px] flex items-center px-[12px] py-[6px] gap-[6px] border-[#D9D9D9] rounded hover:bg-slate-50">
+      <button
+        className="text-[#4D4D4D] border-[1px] flex items-center px-[12px] py-[6px] gap-[6px] border-[#D9D9D9] rounded hover:bg-slate-50"
+        disabled={select === 18}
+        onClick={() => {
+          if (select === 1) {
+            setSelect(10);
+            return;
+          }
+          setSelect(select + 1);
+        }}
+      >
         <p>Next</p>
         <span className="material-symbols-outlined text-[16px]">arrow_forward_ios</span>
       </button>

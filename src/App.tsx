@@ -12,7 +12,7 @@ function App() {
       <div className="h-[50px] w-[100%]">
         <Layout>
           {/* Overview */}
-          <div className=" bg-[#FAFAFA] p-[32px]">
+          <div className="bg-[#FAFAFA] p-[32px]">
             <div className="flex justify-between">
               <p className="text-[#1A181E] text-[20px] font-medium leading-7">Overview</p>
               <div>

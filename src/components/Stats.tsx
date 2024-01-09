@@ -16,7 +16,7 @@ const Stats = () => {
           boxShadow: "0px 2px 6px 0px rgba(26, 24, 30, 0.04)",
         }}
       >
-        <p className="text-[16px] font-normal leading-6 text-[#4D4D4D]">Online orders</p>
+        <p className="text-[16px] font-normal leading-6 text-[#4D4D4D]">Amount received</p>
         <p className="text-[32px] font-medium leading-[38px] text-[#1A181E] mt-[16px]">₹23,92,312.19</p>
       </div>
     </div>
