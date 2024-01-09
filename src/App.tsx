@@ -4,7 +4,7 @@ import "./App.css";
 import Sidebar from "./components/Layout";
 import Layout from "./components/Layout";
 import Stats from "./components/Stats";
-import Transactions from "./components/Transations";
+import Transactions from "./components/Transactions";
 
 function App() {
   return (

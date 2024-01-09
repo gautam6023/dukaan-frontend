@@ -2,3 +2,9 @@
   max-width: 1480px;
   margin: 0 auto;
 }
+
+th,
+td {
+  height: 40px;
+  padding: 12px 10px;
+}
