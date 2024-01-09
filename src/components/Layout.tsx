@@ -33,7 +33,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   ];
 
   return (
-    <div className="flex">
+    <div className="flex h-screen">
       {/* Sidebar */}
       <div className="w-[204px] h-[100vh] bg-[#1E2640] px-[10px] py-[16px] text-[#FFF]">
         {/* Name Section */}
@@ -72,8 +72,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </div>
       </div>
       {/* Topbar */}
-      <div className="flex flex-grow flex-col border-[1px]">
-        <div className="h-[64px] border-b-[1px] border-[#D9D9D9] px-[32px] py-[12px] flex gap-[16px] items-center">
+      <div className="flex flex-col flex-grow">
+        <div className="h-[64px] bg-white border-b-[1px] border-[#D9D9D9] px-[32px] py-[12px] flex gap-[16px] items-center">
           <div className="flex-1 gap-[16px] flex">
             <h1 className="text-[15px] font-normal leading-4">Payments</h1>
             <div className="text-[#4D4D4D] flex items-center gap-[6px] cursor-pointer">
@@ -88,7 +88,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </span>
             <input
               type="text"
-              className="text-[14px] font-light leading-[22px] bg-[#F2F2F2] focus:outline-none w-[100%]"
+              className="text-[14px] font-light leading-[22px] bg-[#F2F2F2] focus:outline-none"
               placeholder="Search features, tutorials, etc."
             />
           </div>
@@ -103,7 +103,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </div>
           </div>
         </div>
-        <div>{children}</div>
+        <div className="flex-grow overflow-auto">{children}</div>
       </div>
     </div>
   );
